@@ -1,0 +1,49 @@
+/* تحسين عرض الأزرار على الموبايل */
+.fab-item, .cta-button, a.button, a.floating-btn {
+  max-width: 90vw;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 30px;
+}
+
+/* معالجة الأعمدة المقسمة */
+.column, .step {
+  text-align: center;
+  line-height: 1.8;
+  white-space: normal;
+  word-spacing: normal;
+}
+
+/* تحسين عرض النصوص */
+body, p, h1, h2, h3, h4, span, div {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  word-wrap: break-word;
+}
+
+/* الحاويات */
+.container, section, .box, .content {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* تحسين عرض الصور والنصوص المتجاورة */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* للهواتف الصغيرة */
+@media (max-width: 480px) {
+  .fab-item {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+}
